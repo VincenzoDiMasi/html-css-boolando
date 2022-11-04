@@ -14,11 +14,28 @@ body {
 
 .container {
     max-width: 1200px;
-    margin: 0 auto;
   }
+
+.row {
+    display: flex;
+    gap: 10px;
+    max-width: 900px;
+    margin: 0 auto;
+}
 
   .flex {
     display: flex;
+  }
+
+  .col {
+    flex-basis: calc(100% / 3);
+    /* border: 2px dashed black; */
+    margin-top: 100px;
+    
+  }
+
+  .card {
+    background-color: rgb(255, 255, 255);
   }
 
   ul {
@@ -29,6 +46,11 @@ body {
 
   li {
     padding: 4px;
+  }
+
+  .card img {
+    height: 400px;
+    
   }
   
   
@@ -67,3 +89,6 @@ body {
     color: white;
     font-weight: bold;
 }
+
+/* Main */
+

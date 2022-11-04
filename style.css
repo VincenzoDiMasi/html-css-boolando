@@ -52,7 +52,19 @@ body {
     height: 400px;
     
   }
+
+  h5 {
+    font-weight: 300;
+  }
+
+  h4 {
+    color: red;
+  }
   
+  .original-price {
+    color: black;
+    text-decoration: line-through;
+}
   
 /* # Navbar */
 
@@ -92,3 +104,4 @@ body {
 
 /* Main */
 
+/* Footer */

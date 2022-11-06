@@ -13,7 +13,8 @@ body {
 /* Utils */
 
 .container {
-    max-width: 1200px;
+    width: 1200px;
+    margin: 0 auto;
   }
 
 .row {
@@ -103,7 +104,7 @@ body {
 .hrt {
   background-color: white;
   color: black;
-  padding: 2px 5px;
+  padding: 5px 8px;
   font-weight: bold;
   position: absolute;
   right: 0;
@@ -146,6 +147,77 @@ body {
     font-weight: bold;
 }
 
-/* Main */
+/* Hover */
 
-/* Footer */
+.hrt:hover{
+  color: red;
+}
+
+.levis1:hover::after{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-size: cover;
+  background-image: url(img/1b.webp);
+  content: '';
+
+  
+
+
+  .guess:hover::after{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover;
+    background-image: url(/img/2b.webp);
+    content: ''
+}
+ 
+
+    .sugar:hover::after{
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-size: cover;
+      background-image: url(img/3b.webp);
+      content: '';
+
+      .levis2:hover::after{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-size: cover;
+        background-image: url(img/4b.webp);
+        content: '';
+
+        .maya:hover::after{
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background-size: cover;
+          background-image: url(img/5b.webp);
+          content: '';
+
+          .espirit:hover::after{
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-size: cover;
+            background-image: url(img/6b.webp);
+            content: ''; */
+
+            /* Footer */
+           
+           

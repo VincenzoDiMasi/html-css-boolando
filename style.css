@@ -35,8 +35,10 @@ body {
   }
 
   .card {
+    position: relative;
     background-color: rgb(255, 255, 255);
   }
+
 
   ul {
     list-style-type: none;
@@ -49,7 +51,9 @@ body {
   }
 
   .card img {
-    height: 400px;
+    /* height: 400px; */
+    display: block;
+    max-width: 100%;
     
   }
 
@@ -65,7 +69,46 @@ body {
     color: black;
     text-decoration: line-through;
 }
-  
+
+.discount {
+  background-color: red;
+  color: white;
+  padding: 2px 5px;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+  bottom: 80px;
+}
+
+.sost {
+  background-color: rgb(0, 129, 1);
+  color: white;
+  padding: 2px 5px;
+  font-weight: bold;
+  position: absolute;
+  left: 50px;
+  bottom: 80px;
+}  
+
+.sost2 {
+  background-color: rgb(0, 129, 1);
+  color: white;
+  padding: 2px 5px;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+  bottom: 80px;
+} 
+
+.hrt {
+  background-color: white;
+  color: black;
+  padding: 2px 5px;
+  font-weight: bold;
+  position: absolute;
+  right: 0;
+  top: 15px;
+}
 /* # Navbar */
 
 .navbar {
@@ -77,6 +120,7 @@ body {
     background-color: rgb(255, 105, 0);
     box-shadow: 0px 1px 8px grey;
     position: fixed;
+    z-index: 1;
 }
 
   .navbar-logo img {

@@ -1,224 +1,236 @@
-/* CSS reset */
+/* Reset */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
- }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  /* generics */
+/* Custom properties */
+:root{
+  --orange: #FF6900;
+  --white: #FFFFFF;
+  --black: #000000;
+  --red: #FF0000;
+  --green: #008000;
+  --dark-blue: #1A1A1A;
+}
+
+
+
+/* Generics */
 body {
-    font-family: sans-serif;
+  font-family: sans-serif;
+  padding-top: 110px;
 }
 
 /* Utils */
-
 .container {
-    width: 1200px;
-    margin: 0 auto;
-  }
-
-.row {
-    display: flex;
-    gap: 10px;
-    max-width: 900px;
-    margin: 0 auto;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
-  .flex {
-    display: flex;
-  }
-
-  .col {
-    flex-basis: calc(100% / 3);
-    /* border: 2px dashed black; */
-    margin-top: 100px;
-    
-  }
-
-  .card {
-    position: relative;
-    background-color: rgb(255, 255, 255);
-    cursor: pointer;
-  }
-
-
-  ul {
-    list-style-type: none;
-    display: flex;
-    justify-content: center;
-  }
-
-  li {
-    padding: 4px;
-  }
-
-  .card img {
-    /* height: 400px; */
-    display: block;
-    max-width: 100%;
-    
-  }
-
-  h5 {
-    font-weight: 300;
-  }
-
-  h4 {
-    color: red;
-  }
-  
-  .original-price {
-    color: black;
-    text-decoration: line-through;
-}
-
-.discount {
-  background-color: red;
-  color: white;
-  padding: 2px 5px;
-  font-weight: bold;
-  position: absolute;
-  left: 0;
-  bottom: 80px;
-}
-
-.sost {
-  background-color: rgb(0, 129, 1);
-  color: white;
-  padding: 2px 5px;
-  font-weight: bold;
-  position: absolute;
-  left: 50px;
-  bottom: 80px;
-}  
-
-.sost2 {
-  background-color: rgb(0, 129, 1);
-  color: white;
-  padding: 2px 5px;
-  font-weight: bold;
-  position: absolute;
-  left: 0;
-  bottom: 80px;
-} 
-
-.hrt {
-  background-color: white;
-  color: black;
-  padding: 5px 8px;
-  font-weight: bold;
-  position: absolute;
-  right: 0;
-  top: 15px;
-}
-/* # Navbar */
-
-.navbar {
-    height: 60px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: rgb(255, 105, 0);
-    box-shadow: 0px 1px 8px grey;
-    position: fixed;
-    z-index: 1;
-}
-
-  .navbar-logo img {
-    height: 30px;
-    display: block;
-  }
-
-  .navbar-menu {
-  position: relative;
-  left: 5%;
-  text-align: center;
-}
-
-.navbar-menu2 {
-    position: relative;
-    right: 5%;
-    text-align: center;
-  }
-
-.navbar a{
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-}
-
-/* Hover */
-
-.hrt:hover{
-  color: red;
-}
-
-.levis1:hover::after{
-  position: absolute;
+header{
+  background-color: var(--orange);
+  color: var(--white);
+  height: 60px;
+  display: flex;
+  align-items: center;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  bottom: 0;
-  background-size: cover;
-  background-image: url(img/1b.webp);
-  content: '';
-
-  
-
-
-  .guess:hover::after{
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-size: cover;
-    background-image: url(img/2b.webp);
-    content: ''
+  z-index: 5;
+  box-shadow: 0 0 5px var(--black);
 }
- 
 
-    .sugar:hover::after{
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background-size: cover;
-      background-image: url(img/3b.webp);
-      content: '';
+main{
+  background-color: var(--white);
+}
 
-      .levis2:hover::after{
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background-size: cover;
-        background-image: url(img/4b.webp);
-        content: '';
+footer{
+  background-color: var(--dark-blue);
+  height: 100px;
+  color: var(--white);
+  display: flex;
+}
 
-        .maya:hover::after{
-          position: absolute;
-          top: 0;
-          left: 0;
-          right: 0;
-          bottom: 0;
-          background-size: cover;
-          background-image: url(img/5b.webp);
-          content: '';
+ul{
+  list-style-type: none;
+  display: flex;
+}
 
-          .espirit:hover::after{
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background-size: cover;
-            background-image: url(img/6b.webp);
-            content: ''; */
+li{
+  padding: 5px;
+}
 
-            /* Footer */
-           
-           
+.bg-red{
+  background-color: var(--red);
+}
+
+.bg-green{
+  background-color: var(--green);
+}
+
+/* Navbar */
+.navbar{
+  height: 80px;
+  flex-basis: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar > *{
+  flex-basis: 20%;
+}
+
+.navbar-logo{
+  flex-grow: 1;
+  text-align: center;
+}
+
+.navbar-logo > img{
+  height: 25px;
+  cursor: pointer;
+}
+
+.navbar-actions > ul{
+  justify-content: flex-end;
+}
+
+.navbar-actions i{
+  cursor: pointer;
+}
+
+.navbar-gender li:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* Main */
+.row{
+  display: flex;
+  gap: 30px;
+}
+
+.column{
+  flex-basis: calc(100% / 3);
+  min-height: 400px;
+}
+
+.card{
+  position: relative;
+  cursor: pointer;
+}
+
+.card > img{
+  width: 100%;
+}
+
+.discount, .sustainability{
+  color: var(--white);
+  padding: 5px 10px;
+  position: relative;
+  left:0;
+  bottom: 60px;
+}
+
+.heart{
+  background: var(--white);
+  color: var(--black);
+  font-size: 15px;
+  padding: 8px 12px;
+  border-right-color: var(--white);
+  position: absolute;
+  top: 5px;
+  right: 0;
+}
+
+.card .img-hover{
+  display: none;
+}
+
+.card:hover .img-hover{
+  display: block;
+}
+
+.card:hover .img-main{
+  display: none;
+}
+
+.heart:hover{
+  color: var(--red);
+}
+
+.img-description{
+  position: relative;
+  bottom: 20px;
+}
+
+.brand{
+  font-size: 15px;
+}  
+
+.name-product{
+  font-weight: bold;
+}
+
+.discount-price{
+  color: var(--red);
+  font-weight: bold;
+}
+
+.real-price{
+  text-decoration: line-through;
+}
+
+#card-empty{
+  position: relative;
+  bottom: 0px;
+}
+
+/* Footer */
+.footer-company h3{
+  padding: 10px 0;
+}
+
+.footer-company li{
+  padding: 5px 0;
+  padding-right: 10px;
+}
+
+.footer-information{
+  display: flex;
+  flex-basis: 100%;
+  gap: 10px;
+}
+
+.footer-company{
+  height: 100px;
+  flex-basis: 50%;
+  padding: 10px 0;
+}
+
+.footer-social{
+  height: 100px;
+  flex-basis: 50%;
+  padding: 15px 0;
+  text-align: right;
+}
+
+.footer-social > h4{
+  margin-right: 15px;
+  margin-bottom: 5px;
+}
+
+.social-icons > i{
+  font-size: 25px;
+  padding: 5px;
+  padding-right: 0;
+  cursor: pointer;
+}
+
+.footer-company li:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
